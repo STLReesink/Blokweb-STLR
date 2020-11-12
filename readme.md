@@ -63,7 +63,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Breakdownschets (week 1)
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
-<img src="images/Breakdown%20sheet%201.png" width="375px" alt="Breakdownsheet">
+<img src="images/breakdownsheet.1.jpg" width="375px" alt="Breakdownsheet">
 
 
 
