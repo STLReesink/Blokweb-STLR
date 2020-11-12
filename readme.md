@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -Suzanne Reesink-
+**Auteur:** -jouw naam-
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -63,26 +63,23 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Breakdownschets (week 1)
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
+<img src="images/breakdownshee.1.jpg" width="375px" alt="Breakdownsheet">
 
 
 
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -Combinatie van vooral blauw met een beetje  rood-
+**Je startniveau:** -Combinatie van vooral blauw met een beetje rood-
 
 **Je focus:** -Ik kies voor het responsive maken-
 
 **Je opdracht:** -https://www.sonos.com/nl-nl/home-
 
-**Screenshot(s) van de eerste pagina (small screen):** -homepagina-
+**Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/p1-1.PNG" width="375px" alt="hoofdpagina foto 1">
+<img src="images/Sonoshomepagina.png" width="375px" alt="home pagina van Sonos">
 
-<img src="images/p1-2.PNG" width="375px" alt="hoofdpagina foto 2">
+**Screenshot(s) van de tweede pagina (small screen):**
 
-**Screenshot(s) van de tweede pagina (small screen):** - nieuws pagina-
-
-<img src="images/p2-1.PNG" width="375px" alt="Nieuws pagina foto 1">
-
-<img src="images/p2-2.PNG" width="375px" alt="Nieuws pagina foto 2">
+<img src="images/Sonosnieuwspagina.png" width="375px" alt="Nieuws pagina Sonos">
