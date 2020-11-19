@@ -3,40 +3,142 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="jouw naam">
+    <meta name="Suzanne Reesink" content="Suzanne Reesink">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">
 
-    <title>Howdy</title>
+    <title>Sonos</title>
 
     <link href="styles/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <div class="stylen">
-            <ul class="menu">
-                <li><a href="#work">Ondersteuing</a></li>
-                <li><a href="#about">Leer meer</a></li>
-                <li><a href="#careers">Shoppen</a></li>
-            </ul>
-            <a href="#" class="logo">
-                <img src="images/logo1.png" alt="logo sonos">
-            </a>
-            <ul class="menu2">
-                <li><a href="index.html">
-                        <img src="images/Icoonacount.png" class="account" alt="persoon icoon">Aanmelden</a></li>
+    <header>
+        <nav class="navigatie" onclick="myFunction()">
+            <ul class="menu" >
+                <li>
+                <img src="images/buttonicoonmenu.png" alt="menu logo"/>
+                </li>
                 <li><img src="images/Icoonzoeken.png" alt="vergrootglas"></li>
+                <li><a href="#" class="logo"><img src="images/logo1.png" alt="logo sonos"></a></li>
+                <li><a href="index.html">
+                        <img src="images/Icoonacount.png" class="account" alt="persoon icoon"></a></li>
                 <li><img src="images/Icoonbasket.png" alt="shopmandje"></li>
             </ul>
-        </div>
+
+            <ul class="dropdown" id="myLinks">
+                <li><a href="#" class="groter">Ondersteuning</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Home Cinema</a></li>
+                <li><a href="#">Audio Componenten</a></li>
+                <li><a href="#">Speakersets</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Accessoires</a></li>
+                <li><a href="#">Inbouwoplossingen</a></li>
+                <li><a href="#">Speakeraanbeveling </a></li>
+                <li><a href="#">Vergelijken</a></li>
+                <li><a href="#">Bestel alle</a></li>
+                <li><a href="#">Cadeauzoeker</a></li>
+                <li><a href="#" class="groter">Leer meer</a></li>
+                <li><a href="#" class="groter">Shoppen</a></li>
+            </ul>
+
+        </nav>
     </header>
 
     <main>
-        <img class="1" src="images/sonoswoonkamer.jpg" alt="woonkamer">
+        <img class="living" src="images/sonoswoonkamer.jpg" alt="woonkamer">
+        <h1>Een betere manier om te luisteren</h1>
+        <div class="buttons1">
+            <input type="button" value="Video bekijken" />
+            <input type="submit" value="Meer info" />
+        </div>
+        <div class="wrapper1">
+            <nav class="boxen">
+                <a href="https://www.sonos.com/nl-nl/shop/arc.html">
+                    <img src="images/sonosarc1.png" class="boxen_img" alt="arc box" />
+                    <h2>Voor grote tv's</h2>
+                    <p class="soortbox">Arc</p>
+                    <span class="prijs">€899</span>
+                </a>
+                <a href="https://www.sonos.com/nl-nl/shop/beam.html">
+                    <img src="images/sonosbeam.png" class="boxen_img" alt="beam box" />
+                    <h2>Voor kleinere tv's</h2>
+                    <p class="soortbox">Beam</p>
+                    <span class="prijs">€449</span>
+                </a>
+                <a href="https://www.sonos.com/nl-nl/shop/five.html">
+                    <img src="images/sonosfive.png" class="boxen_img" alt="Five box" />
+                    <h2>Voor hifi-geluid</h2>
+                    <p class="soortbox">Five</p>
+                    <span class="prijs">€579</span>
+                </a>
+                <a href="https://www.sonos.com/nl-nl/shop/sub.html">
+                    <img src="images/sonossub.png" class="boxen_img" alt="Sub box" />
+                    <h2>Voor krachtige bass</h2>
+                    <p class="soortbox">Sub</p>
+                    <span class="prijs">€799</span>
+                </a>
+                <a href="https://www.sonos.com/nl-nl/shop/move.html">
+                    <img src="images/sonosmovezwart.png" class="boxen_img" alt="Move box" />
+                    <h2>Voor geluid waar je meer wilt</h2>
+                    <p class="soortbox">Move</p>
+                    <span class="prijs">€399</span>
+                </a>
+                <a href="https://www.sonos.com/nl-nl/shop/one.html">
+                    <img src="images/sonosone.png" class="boxen_img" alt="One box" />
+                    <h2>Voor stembedieningen</h2>
+                    <p class="soortbox">One</p>
+                    <span class="prijs">€229</span>
+                </a>
+                <a href="https://www.sonos.com/nl-nl/shop/one-sl.html">
+                    <img src="images/sonosonssl.png" class="boxen_img" alt="One SL box" />
+                    <h2>Voor elke kamer</h2>
+                    <p class="soortbox">One SL</p>
+                    <span class="prijs">€199</span>
+                </a>
+                <a href="https://www.sonos.com/nl-nl/shop/port.html">
+                    <img src="images/sonosonssl.png" class="boxen_img" alt="Port" />
+                    <h2>Voor traditionele stereo's</h2>
+                    <p class="soortbox">Port</p>
+                    <span class="prijs">€449</span>
+                </a>
+                <a href="https://www.sonos.com/nl-nl/shop/amp.html">
+                    <img src="images/sonosamp.png" class="boxen_img" alt="Amp" />
+                    <h2>Voor bekabelde speakers</h2>
+                    <p class="soortbox">Amp</p>
+                    <span class="prijs">€699</span>
+                </a>
+            </nav>
+        </div>
+        <div class="dolbyatmos">
+            <div class="intop_dolbyatomos">
+                <h1>Briljant geluid voor tv, muziek en meer</h1>
+                <input type="button" value="Koop nu" />
+                <img src="images/dolbyatomoslogo.png" alt="logo van Dolby Atmos">
+            </div>
+            <div class="inbottom_dolbyatomos">
+                <img src="images/sonosarc1.png" alt="arc box zwart">
+                <img src="images/sonosarcwit.png" alt="arc box wit">
+            </div>
+        </div>
+        <div class="movewit">
+            <div class="lunar">
+                <h1>Nieuw: Lunar white</h1>
+                <p>Onze draagbare speaker is er nu ook in een lichtere kleur die past bij je interieur en de rest van je systeem.</p>
+                <input type="button" value="Koop nu" />
+            </div>
+            <img src="images/sonosmovewit.png" alt="Sonos Move box wit" />
+        </div>
+        <div class="stations">
+            <h1>Sonos-Stations</h1>
+            <p>Ontdek een gevarieerde mix van genrestations met de meestbeluisterde artiesten en nummers van Sonos-luisteraars.</p>
+            <input type="button" value="Meer info" />
+        </div>
+        <ul class="stations">
+            <li><img src="images/radio80sflash.png" alt="radio flash"></li>
+        </ul>
 
         <script src="scripts/script.js"></script>
     </main>

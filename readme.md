@@ -79,7 +79,8 @@ https://codepen.io/pirrera/pen/rayoLW
 
 **Je startniveau:** -Combinatie van vooral blauw met een beetje rood-
 
-**Je focus:** -Ik kies voor het responsive maken-
+**Je focus:** -Ik kies voor extra
+aandacht voor de surface laag-
 
 **Je opdracht:** -https://www.sonos.com/nl-nl/home-
 
