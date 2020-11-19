@@ -57,12 +57,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Verslag van meeting
 
 -na afloop snel uitkomsten vastleggen-
+12-11-20
 <img src="images/week1.voortgang" width="375px" alt="bereikt in week 1">
-Ik heb flinken ruzie met de css van mijn menu. De menu of navigatiebalk is enorm gecompliceerd bij sonos. en ik weet nog niet hoe ik dit voor elkaar ga krijgen.
+Ik heb flinken ruzie met de css van mijn menu. 
+16-11-20
+De menu of navigatiebalk is enorm gecompliceerd bij sonos en ik weet nog niet hoe ik dit voor elkaar ga krijgen.
 gebruik dit:
 https://codepen.io/mutedblues/pen/MmPNPG
 en dit,
 https://codepen.io/pirrera/pen/rayoLW
+18-11-20
+Ik heb van Lars Kamman bij les gehad over js. Ik ben op advies van Lars over gestapt van responsive naar aandacht van de surface laag. Dit omdat ik voor mijn header al veel moest doen met js.
 
 
 
