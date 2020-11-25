@@ -3,11 +3,15 @@
 *::after,
 *::before {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    max-width: 100%;
 }
 
-/* header */
-.header {
+/* -- HEADER --  */
+
+
+header {
     background-color: rgb(216, 216, 216);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
@@ -15,7 +19,12 @@
     z-index: 3;
 }
 
-.header ul {
+nav {
+    width: 100vw;
+    height: 2em;
+}
+
+header ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -23,7 +32,13 @@
     background-color: rgb(216, 216, 216);
 }
 
-.header li a {
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu li a {
     display: block;
     padding: 20px 20px;
     text-decoration: none;
@@ -31,141 +46,286 @@
     font-family: inherit;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
+.menu li img,
+.menu li a img {
+    width: 1.5em;
+}
+
+.dropdown li {
+    color: red;
+    font-size: 1.3em;
+    padding: 1.2em 0.6em;
     text-decoration: underline;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    width: 100%;
-
-}
-
-
-/* menu */
-
-.header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-}
-
-/* menu icon */
-
-.header .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    float: left;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-}
-
-.header .menu-icon .navicon {
-    background: rgb(216, 216, 216);
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-    background: rgb(216, 216, 216);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-    top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-    top: -5px;
-}
-
-/* menu btn */
-
-.header .menu-btn {
-    display: none;
-}
-
-.header .menu-btn:checked ~ .menu {
-    max-height: 240px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
 }
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
-    .header li {
-        float: right;
-    }
+.nav ul li a {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    display: block;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    top: 2em;
+    overflow: hidden;
+    transition: .5s;
 
-    .header li a {
-        padding: 20px 30px;
-    }
-
-    .header .menu {
-        clear: none;
-        float: left;
-        max-height: none;
-    }
-
-    .header .menu-icon {
-        display: none;
-    }
 }
 
-.menu2 {
+.dropdown {
     clear: both;
     max-height: 0;
     cursor: pointer;
     display: inline-block;
-    float: right;
-    padding: 28px 20px;
+    padding: 1.5em 1em;
     position: relative;
     user-select: none;
+
 }
 
-#stylen {
-    position: relative;
-    flex: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/*main, hier begint de inhoud van de website*/
-
-
-.1 {
-    height: auto;
+.dropdown ul {
+    position: absolute;
     width: 100%;
-    max-width: 400px;
+    height: calc(100vh);
+    left: 0em;
+    top: -3.86em;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FF9F9F;
+    top: -0.625em;
+    bottom: -2.5em;
+    max-height: 0em;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* -- MAIN BEGINT VANAF HIER -- */
+.containereen {
     display: block;
-    box-sizing: border-box;
+    position: relative;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    top: 3em;
+}
+
+.living {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    top: auto;
+    border-bottom: 3em;
+}
+
+h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    width: 9em;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.buttoneen {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 50%;
+}
+
+.button {
+    width: 12em;
+    height: 36px;
+    border: 2px solid white;
+    padding: 7px 27px 7px 27px;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    text-align: center;
+    line-height: 1.8em;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-right: 1em;
+
+}
+
+.een {
+    width: 12em;
+    color: white;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+}
+
+/* -- CAROUSEL -- */
+
+.carousel {
+    background-color: rgb(216, 216, 216);
+    width: 100%;
+    display: block;
+    padding-top: 430px;
+    position: static;
+}
+
+.inhoud {
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 3em;
+}
+
+.holder {
+    background-color: rgb(216, 216, 216);
+    max-width: 70%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    position: relative;
+    flex-shrink: 0;
+    padding-left: 3em;
+    border-right: 2px solid black;
+}
+
+.boxen_img {
+    background-color: rgb(216, 216, 216);
     object-fit: cover;
+    width: 100%;
+}
+
+.ruimte {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    display: flex;
+    font-size: 16px;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+.soortbox {
+    display: flex;
+    font-size: 12px;
+    line-height: 2em;
+}
+
+.prijs {
+    display: flex;
+    font-size: 16px;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+/* -- DOLBY ATMOS -- */
+
+.dolbyatmos {
+    display: block;
+    background-color: #d8a158;
+    padding: 30px;
+
+}
+
+.intop_dolbyatomos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 15px 0px 15px;
+}
+
+h3 {
+    font-size: 32px;
+    letter-spacing: 0.4px;
+    word-spacing: 0.1em;
+    font-weight: 500;
+    margin-bottom: 13px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.twee {
+    font-size: 14px;
+    color: black;
+    text-decoration: underline;
+    word-spacing: 0.4px;
+    letter-spacing: 0.3px;
+    line-height: 1.6em;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+figure {
+    width: 144px;
+    overflow: hidden;
+    margin: 0;
+    border-top: 15px;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    margin: -2% 3;
+    padding-top: 2em;
+}
+
+.inbottom_dolbyatomos {}
+
+/* -- DE SONOS MOVE WIT --*/
+
+.movewit {
+    display: block;
+    background-color: #1c5f4a;
+    padding: 30px;
+}
+
+.lunar {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 28px;
+}
+
+.drie {
+    color: rgb(255, 255, 255, 0.8);
+    font-size: 32px;
+    line-height: 1.27em;
+    letter-spacing: .4px;
+    font-weight: 500;
+    margin-right: 20%;
+    text-align: start;
+}
+
+.lunar p {
+    color: rgb(255, 255, 255, 0.8);
+    line-height: 1.6em;
+    letter-spacing: .3px;
+    word-spacing: .4px;
+    font-weight: 200;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.vier {
+   background-color: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    border-bottom-color: rgb(255, 255, 255, 0.8);
+    padding: 3px 10px 3px 10px;
+    color: rgb(255, 255, 255, 0.8);
+    font-size: 14px
 }
