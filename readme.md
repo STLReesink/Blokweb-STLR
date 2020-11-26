@@ -48,13 +48,27 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -samen met je groepje opstellen-
 
-| Palenque       | Sarah              | Susan        | Suzanne          | Casper
-| ---            | ---                | ---          | ---              |---
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    | en dan
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker | ik dat
-| ...            | ...                | ...          | ...              | wil ik
-|                |                    |              |                  | zeker
-|                |                    |              |                  | ...
+PALENQUE WIL DIT:
+
+SARAH WIL DIT:
+    •hoe zet ik een hartje op me foto’s en hoe bewerk ik dit goed met Javascript
+    •Ik twijfel of me site wel goed responsive is, heb ik wel de juiste code gebruikt hiervoor
+    •Hoe ga ik de tab bar verwerken in me website?
+    •Hoe stijl ik de dropdown list met de foto’s etc er in op me detailpagina
+
+SUSAN WIL DIT:
+    •Hoe voeg je een eigen lettertype toe? (Ik heb een lettertype dat eindigt op .otf)
+    •Hoe kun je het beste witruimte oplossen? Is dat alleen te doen met postion:absolute?
+    •Hoe maak je een uitklapfooter?
+    •Moet in Github ook de opdrachten komen te staan wat je hebt gemaakt in codepen.io?
+
+SUZANNE (ik) WIL DIT:
+    • ik wil graag weten of ik mijn talen selectie onderin de footer moet maken en hoe?
+    • of ik de achtergrond van de kerst banner moet uitwerken?
+
+CASPER WIL DIT:
+
+
 ### Verslag van meeting
 
 -na afloop snel uitkomsten vastleggen-
@@ -71,6 +85,8 @@ https://codepen.io/pirrera/pen/rayoLW
 Ik heb van Lars Kamman bij les gehad over js. Ik ben op advies van Lars over gestapt van responsive naar aandacht van de surface laag. Dit omdat ik voor mijn header al veel moest doen met js.
 23-11-20
 Vandaag heb ik al mijn HTML afgemaakt
+25-11-20
+Ik mocht van Ires bij de dolby atmos pagina een screenshot maken van hoe de arc boxen gestyled zijn. Want dat kost heel veel tijd en is een behoorlijke uitdaging. Ik wil nu eerst focussen het afhebben van de pagina.
 
 
 
