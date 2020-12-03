@@ -6,11 +6,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
-
-
+1. https://codepen.io/mutedblues/pen/MmPNPG
+2. https://codepen.io/pirrera/pen/rayoLW
+3. https://codepen.io/samternent/pen/azWxpp
+4. https://codepen.io/nehasharma/pen/LELPEB
+5. https://css-tricks.com/line-on-sides-headers/
+6. https://css-tricks.com/how-to-make-a-css-only-carousel/
 
 ## Eindgesprek (week 7/8)
 
@@ -39,16 +40,31 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Stand van zaken
 
 -dit ging goed & dit was lastig-
+Ires vond dat we/ik goed opweg waren.
+Ze zei dat wij al veel meer hadden dan de mensen uit het vorige blok.
+Ik heb nu bijna de eerste pagina af.
+2-12-20
+Ires gecontacteerd, om te helpen met een carousel. Maar ik kom er nog steeds niet uit. Daarom janno gecontacteerd.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images/Voortgang1.1.png" width="375px" alt="Screenshot1">
+<img src="images/Voortgang1.2.png" width="375px" alt="Screenshot2">
+<img src="images/Voortgang1.3.png" width="375px" alt="Screnshot3">
+
+Op de eerste screenshot is te zien dat ik de navigatie balk en carousel af heb.
+op de tweede screenshot is te zien dat ik de DolbyAtmos sectie af heb met de boxen als screenshot.
+Op de derde screenshot is te zien dat ik de Witte move box juist heb weten te plaatsen.
+
 
 ### Agenda voor meeting
 
 -samen met je groepje opstellen-
 
 PALENQUE WIL DIT:
+    •Moet ik de carousel/slider/button maken met gewoon css?
+    •Moet ik de foto’s van insta “life” er in zetten?
+    •Moeten de links binnen je eigen website terug linken naar de andere pagina?
 
 SARAH WIL DIT:
     •hoe zet ik een hartje op me foto’s en hoe bewerk ik dit goed met Javascript
@@ -65,8 +81,7 @@ SUSAN WIL DIT:
 SUZANNE (ik) WIL DIT:
     • ik wil graag weten of ik mijn talen selectie onderin de footer moet maken en hoe?
     • of ik de achtergrond van de kerst banner moet uitwerken?
-
-CASPER WIL DIT:
+    • hoe ik mijn navigatie dingen het beste kan maken met js?
 
 
 ### Verslag van meeting
