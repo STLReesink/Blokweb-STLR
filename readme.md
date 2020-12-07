@@ -45,6 +45,9 @@ Ze zei dat wij al veel meer hadden dan de mensen uit het vorige blok.
 Ik heb nu bijna de eerste pagina af.
 2-12-20
 Ires gecontacteerd, om te helpen met een carousel. Maar ik kom er nog steeds niet uit. Daarom janno gecontacteerd.
+Na de les heb ik er voor gekozen mijn website responsive te maken.
+7-12-20
+Het gaat even minder met mij, door het thuis zitten. Ik kom heel moeilijk aan de slag. Zie dit vak als een hele grote berg.
 
 **Screenshot(s):**
 
@@ -117,8 +120,7 @@ Ik mocht van Ires bij de dolby atmos pagina een screenshot maken van hoe de arc 
 
 **Je startniveau:** -Combinatie van vooral blauw met een beetje rood-
 
-**Je focus:** -Ik kies voor extra
-aandacht voor de surface laag-
+**Je focus:** -Ik kies voor het responsive maken van mijn website-
 
 **Je opdracht:** -https://www.sonos.com/nl-nl/home-
 
