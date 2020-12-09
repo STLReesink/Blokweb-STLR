@@ -105,7 +105,6 @@ header ul {
 /* -- MAIN BEGINT VANAF HIER -- */
 .containereen {
     display: block;
-    position: relative;
     background-size: cover;
     background-repeat: repeat-x;
     background-position: center;
@@ -117,7 +116,7 @@ header ul {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    position: absolute;
+    position: relative;
     background-size: cover;
     background-repeat: repeat-x;
     background-position: center;
@@ -175,7 +174,6 @@ h1 {
     background-color: rgb(216, 216, 216);
     width: 100%;
     display: block;
-    padding-top: 430px;
     position: static;
 }
 
@@ -497,21 +495,57 @@ figcaption {
     position: absolute;
     display: flex;
     justify-content: center;
+    padding: 0;
 
 }
 
 .zeven {
     display: block;
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: rgb(216, 216, 216);
 }
 
 /*---WAAROM SONOS ----*/
-
-article {
+.waarom {
+    padding: 70px 30px 70px 30px;
     display: block;
     background-color: #1c5f4a;
+    color: rgb(255, 255, 255, 0.8);
+    margin: -5px;
+    text-align: left;
+}
+
+.waaromfoto {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    background-color: #1c5f4a;
+}
+
+.rechts {
+    display: flex;
+    width: 300px;
+    justify-content: flex-end;
+    align-content: flex-end;
+    top: 100%;
+    left: 500%;
+}
+
+.links {
+    overflow: hidden;
+    width: 200px;
+    top: 100%;
+    left: 500%;
+
+}
+
+article {
+    padding: 30px;
+    display: block;
+    background-color: #1c5f4a;
+    color: rgb(255, 255, 255, 0.8);
 }
 
 article h3 {
@@ -529,15 +563,229 @@ article h3 {
 }
 
 article img {
-    position:relative;
+    position: relative;
     display: flex;
+    justify-content: space-around;
 }
 
+h4 {
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    letter-spacing: .2px;
+    box-sizing: border-box;
 
+}
 
+article div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
+article p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: .5px;
+    word-spacing: .6px;
+}
 
+.ptwee {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
 
+/*--- FOOTER BEGINT VANAF HIER---*/
 
+footer {
+    padding: 31px 40px 60px 40px;
+    color: black;
+    background-color: rgb(216, 216, 216);
 
+}
 
+.footera {
+    padding: 0;
+    list-style: none;
+    margin: 0 30px 30px 0;
+}
+
+.footera li a {
+    font-size: 21px;
+    line-height: 2em;
+    letter-spacing: .2px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0, 0.8);
+    ;
+    font-weight: 400;
+}
+
+.footera li a:hover {
+    text-decoration: overline;
+    transition: transform 0.3s ease;
+}
+
+.footerb {
+    padding: 0;
+    list-style: none;
+    margin: 0 30px 30px 0;
+}
+
+.footerb li a {
+    font-size: 12px;
+    line-height: 3em;
+    letter-spacing: .2px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0, 0.8);
+    font-weight: 400;
+}
+
+.footerb li a:hover {
+    text-decoration: overline;
+    transition: transform 0.3s ease;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 60px;
+    margin-bottom: 30px;
+
+}
+
+.social img {
+    width: 30px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.onderschrift {
+    padding-top: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    padding-right: 60px;
+}
+
+.onderschrift a {
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.8);
+    line-height: 2em;
+    letter-spacing: .3px;
+    word-spacing: .6px;
+}
+
+/*-- HIER EINDIGT DE HOME PAGE ---*/
+
+/*--- HIER BEGINT DE NIEUWS PAGINA---*/
+
+/*--- HIER BEGINT DE HEADER FOTO---*/
+.nieuwskamer {
+    display: block;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    top: 3em;
+}
+
+.kamer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    top: auto;
+    border-bottom: 3em;
+}
+
+h1 {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    width: 9em;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+/*--- Hier begint de select en mailto---*/
+
+.body {
+    background-color: rgb(216, 216, 216);
+    padding: 15px;
+}
+
+.keuze {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 700;
+
+}
+
+.mailen {
+    color: rgb(0, 0, 0, 0.8);
+}
+
+select {
+    appearance: none;
+    background-color: #fafafa;
+    border: none;
+    padding: 12px 18px 12px 18px;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*---Hier begint de Blog---*/
+
+.container {
+    max-width: 100%;
+    padding-top: 20px;
+    margin: auto;
+
+}
+
+.container ul {
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.container ul li {
+    margin-bottom: 2.5rem;
+}
+
+.container ul li img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 240px;
+    min-height: 240px;
+}
+
+.container ul li a {
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(0, 0, 0, 0.8);
+    line-height: 1.2em;
+    border: 25px solid white;
+}

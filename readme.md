@@ -12,6 +12,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 4. https://codepen.io/nehasharma/pen/LELPEB
 5. https://css-tricks.com/line-on-sides-headers/
 6. https://css-tricks.com/how-to-make-a-css-only-carousel/
+7. https://www.youtube.com/watch?v=YszONjKpgg4
 
 ## Eindgesprek (week 7/8)
 
@@ -31,7 +32,30 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+PALENQUE WIL DIT:
+    • Hoe zorg ik er voor dat me menubar sticky wordt.
+    • hoe zorg ik er voor dat je niet kan scrollen als me menu open staat.
+    • Hoe maak ik me button bewegend.
+    • moet ik die flash img aanpassen?
+
+SARAH WIL DIT:
+    • Hoe gebruik ik de ::before goed voor de strepen
+    • Hoe maak ik me tabbar sticky
+    • Hoe fix ik me tabbar goed
+    • Hoe maak ik de dropdown zoals op de website
+
+SUSAN WIL DIT:
+    • Hoe los ik de witruimte op (nergens zit een grote width, height, margin of padding op)
+    • Hoe stijl ik de footer? Op internet staan alleen maar moeilijke dingen
+    • Hoe maak ik de functieloze groene balk onder de foto (en hoe gaat deze responsive mee?)
+    • Hoeveel classes mag je meegeven? Ik heb er nu 1 op de main van de detailpagina, mag dat wel?
+
+SUZANNE (ik) WIL DIT:
+    • Weten hoe ik mijn carousel moet maken?
+    • Hoe ik bij 'waarom sonos' de afbeeldingen over elkaar moet plaatsen en positioneren?
+    • Hoe ik bij 'waarom sonons' die underline kleiner maak?
+    • Hoeveel 'kopjes' ik bij de nieuws pagina moet maken?
+    • Hoe krijg ik bij kerst mijn achtergrond img?
 
 
 
