@@ -9,84 +9,170 @@
 }
 
 /* -- HEADER --  */
-
-
+/* -- UITVOUW MENU--  */
 header {
     background-color: rgb(216, 216, 216);
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0.06em 0, 06em 0.25em 0em rgba(0, 0, 0, .1);
     position: fixed;
     width: 100%;
     z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header > a:first-of-type {
+    padding: 0.5em;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-gap: .25em;
+    align-items: center;
+}
+
+header > a:first-of-type img {
+    height: 1.5em;
 }
 
 nav {
     width: 100vw;
-    height: 2em;
+    height: 3em;
+    order: -1;
 }
 
-header ul {
+nav button {
+    position: relative;
+    width: 5em;
+    height: 2.5em;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    border-radius: .25em;
+    appearance: none;
+    cursor: pointer;
+    z-index: 100;
+    top: 0.875em;
+}
+
+/*--Content: "\2630" is het importeren van een hamburger icoon dat in een database staat---*/
+.navigatie button::before {
+    content: "\2630 ";
+    display: inline-block;
+    width: 1em;
+    transform: scale(2);
+    border: none;
+}
+
+/*--Content: "\2715" is het importeren van een kruis icoon dat in een database staat. Bron
+https://www.w3schools.com/csSref/css_entities.asp ---*/
+nav.toonDropdown button::before {
+    content: "\2715";
+    border: none;
+}
+
+nav ul {
     margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: rgb(216, 216, 216);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: translatex(-100%);
+    transition: .5s;
+    z-index: 50;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    font-size: 1em;
+    padding-left: 2em;
+    padding-top: 3.5em;
+}
+
+nav.toonDropdown ul {
+    transform: translatex(0);
+    transition: .5s;
+}
+
+.dropdown li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.6875em;
+    display: inline-block
+}
+
+.dropdown li a {
+    display: inline-block;
+    padding-left: 1em;
+    text-decoration: none;
+    color: black;
+    padding: 0;
+}
+
+.groter {
+    font-size: 2.06em;
+    padding: 0em;
+    margin: 0em;
+    text-align: left;
+}
+
+
+
+/*---Menu---*/
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-height: 0;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    top: -1.25em;
+    padding: 10px;
+    margin-left: 2em;
+
+}
+
+.menu ul {
+    display: flex;
     padding: 0;
     list-style: none;
     overflow: hidden;
     background-color: rgb(216, 216, 216);
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.menu li a {
-    display: block;
-    padding: 20px 20px;
-    text-decoration: none;
+.menu li {
     color: black;
-    font-family: inherit;
-}
-
-.menu li img,
-.menu li a img {
-    width: 1.5em;
-}
-
-.dropdown li {
-    color: red;
     font-size: 1.3em;
     text-decoration: underline;
 }
 
-/* 48em = 768px */
+.menu li:first-of-type {
+    margin-right: 35%;
+}
 
 .nav ul li a {
-    width: 100%;
-    text-align: center;
-    font-size: 2em;
     display: block;
-    z-index: 5;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: relative;
-    top: 2em;
-    overflow: hidden;
-    transition: .5s;
+    padding: 1.25em;
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
 
 }
 
-.dropdown {
-    clear: both;
-    max-height: 0;
-    cursor: pointer;
-    display: inline-block;
-    padding: 1.5em 1em;
-    position: relative;
-    user-select: none;
-
-}
-
-.dropdown ul {
+.menu ul {
     position: absolute;
     width: 100%;
     height: calc(100vh);
@@ -100,6 +186,17 @@ header ul {
     max-height: 0em;
     overflow: hidden;
     transition: .5s;
+}
+
+.menu li {
+    width: 1em;
+}
+
+.logo {
+    width: 4.5em;
+    position: absolute;
+    top: 44%;
+    margin-left: 38%;
 }
 
 /* -- MAIN BEGINT VANAF HIER -- */
@@ -124,9 +221,9 @@ header ul {
     border-bottom: 3em;
 }
 
-h1 {
+h1:first-of-type {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -25%);
     width: 9em;
@@ -137,7 +234,7 @@ h1 {
 
 .buttoneen {
     position: absolute;
-    top: 40%;
+    top: 39%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -147,15 +244,15 @@ h1 {
 
 .button {
     width: 12em;
-    height: 36px;
-    border: 2px solid white;
+    height: 2.25em;
+    border: 0.125em solid white;
     background-color: transparent;
     color: white;
     position: relative;
     text-align: center;
     line-height: 1.8em;
-    font-size: 16px;
-    border-radius: 50px;
+    font-size: 1em;
+    border-radius: 3.125em;
     margin-right: 1em;
 
 }
@@ -174,7 +271,7 @@ h1 {
     background-color: rgb(216, 216, 216);
     width: 100%;
     display: block;
-    position: static;
+    position: relative;
 }
 
 .inhoud {
@@ -194,7 +291,7 @@ h1 {
     position: relative;
     flex-shrink: 0;
     padding-left: 3em;
-    border-right: 2px solid black;
+    border-right: 0.125em solid black;
 }
 
 .boxen_img {
@@ -210,7 +307,7 @@ h1 {
 
 h2 {
     display: flex;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 2em;
     font-weight: bold;
 }
@@ -223,7 +320,7 @@ h2 {
 
 .prijs {
     display: flex;
-    font-size: 16px;
+    font-size: 0.75em;
     line-height: 2em;
     font-weight: bold;
 }
@@ -233,7 +330,7 @@ h2 {
 .dolbyatmos {
     display: block;
     background-color: #d8a158;
-    padding: 30px;
+    padding: 1.875em;
 
 }
 
@@ -241,35 +338,35 @@ h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0px 15px 0px 15px;
+    margin: 0em 0.937em 0em 0.937empx;
 }
 
 h3 {
-    font-size: 32px;
-    letter-spacing: 0.4px;
+    font-size: 2em;
+    letter-spacing: 0.025em;
     word-spacing: 0.1em;
     font-weight: 500;
-    margin-bottom: 13px;
+    margin-bottom: 0.8125em;
     text-align: center;
     max-width: 100%;
 }
 
 .twee {
-    font-size: 14px;
+    font-size: 0.875em;
     color: black;
     text-decoration: underline;
-    word-spacing: 0.4px;
-    letter-spacing: 0.3px;
+    word-spacing: 0.025em;
+    letter-spacing: 0.01875em;
     line-height: 1.6em;
     cursor: pointer;
     font-weight: 200;
 }
 
 figure {
-    width: 144px;
+    width: 9em;
     overflow: hidden;
     margin: 0;
-    border-top: 15px;
+    border-top: 0.9375em;
 }
 
 figure img {
@@ -289,22 +386,22 @@ figure img {
 .movewit {
     display: block;
     background-color: #1c5f4a;
-    padding: 30px;
-    height: 650px;
+    padding: 1.875em;
+    height: 40.625em;
 }
 
 .lunar {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding-bottom: 28px;
+    padding-bottom: 1.75em;
 }
 
 .drie {
     color: rgb(255, 255, 255, 0.8);
-    font-size: 32px;
+    font-size: 2em;
     line-height: 1.27em;
-    letter-spacing: .4px;
+    letter-spacing: 0.025em;
     font-weight: 500;
     margin-right: 20%;
     text-align: start;
@@ -313,28 +410,28 @@ figure img {
 .lunar p {
     color: rgb(255, 255, 255, 0.8);
     line-height: 1.6em;
-    letter-spacing: .3px;
-    word-spacing: .4px;
+    letter-spacing: 0.01875em;
+    word-spacing: 0.025em;
     font-weight: 200;
-    font-size: 14px;
-    margin-bottom: 14px;
+    font-size: 0.875em;
+    margin-bottom: 0.875em;
 }
 
 .vier {
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid;
+    border-bottom: 0.0625em solid;
     border-bottom-color: rgba(255, 255, 255, 0.8);
-    padding: 3px;
+    padding: 0.1875em;
     color: rgb(255, 255, 255, 0.8);
-    font-size: 14px
+    font-size: 0.875em;
 }
 
 .wittebox {
-    width: 50px;
+    width: 3.125em;
     overflow: hidden;
     margin: 0;
-    border-top: 15px;
+    border-top: 0.9375em;
 }
 
 .wittebox img {
@@ -349,8 +446,9 @@ figure img {
 .vijf {
     display: block;
     width: 100%;
-    height: 200px;
+    height: 12.5em;
     background-color: rgb(216, 216, 216);
+    margin: 0;
 }
 
 /*--SONOS STATION BEGINT HIER--*/
@@ -363,32 +461,32 @@ figure img {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 28px;
+    padding-bottom: 1.75em;
 }
 
 .ontdek {
     display: flex;
     text-align: center;
     margin: 0;
-    padding: 0px 30px 30px 30px;
+    padding: 0em 1.875em 1.875em 1.875em;
     font-weight: 350;
-    line-height: 1.6;
-    letter-spacing: .3px;
-    word-spacing: .4px;
-    font-size: 14.6px;
+    line-height: 1.6em;
+    letter-spacing: 0.01875em;
+    word-spacing: 0.025em;
+    font-size: 0.9125em;
 }
 
 .zes {
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid;
+    border-bottom: 0.0625em solid;
     border-bottom-color: rgba(0, 0, 0, 1);
-    padding: 3px;
+    padding: 0.1875em;
     color: rgb(0, 0, 0, 1);
-    font-size: 14.6px;
+    font-size: 0.9125em;
     font-weight: 350;
-    letter-spacing: .3px;
-    word-spacing: .4px;
+    letter-spacing: 0.01875em;
+    word-spacing: 0.025em;
 }
 
 .stations {
@@ -400,6 +498,8 @@ figure img {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    display: -webkit-inline-box;
+    height: 28em;
 }
 
 .stations li {
@@ -418,42 +518,48 @@ figure img {
     height: 100%;
 }
 
-/*--dit is nu een figcaption--*/
 figcaption {
     display: flex;
     text-align: left;
-    margin-top: 13px;
-    padding: 0px 70px 50px 70px;
+    margin-top: 0.9375em;
     font-weight: 350;
     line-height: 1.6;
-    letter-spacing: .3px;
-    word-spacing: .4px;
-    font-size: 14.6px;
+    letter-spacing: 0.01875em;
+    word-spacing: 0.025em;
+    font-size: 0.9125em;
+}
+
+figure {
+    width: 9em;
+    overflow: hidden;
+    margin: 0;
+    border-top: 0.9375em;
+    margin: 0 1em;
 }
 
 /*--KERST OP EEN KLEEDJE BEGINT HIER--*/
 
 .kerst {
     display: block;
-    padding: 30px;
-    height: 650px;
-    background-image: url("images/kerstachtergrond.png");
+    padding: 1.875em;
+    height: 40.625em;
+    background-image: url("../images/kerstachtergrond.png");
     background-repeat: no-repeat;
-    background-color: #bb4725;
+    background-size: cover;
 }
 
 .kerstinhoud {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding-bottom: 28px;
+    padding-bottom: 1.75em;
 }
 
 .kersttitel {
     color: rgb(255, 255, 255, 0.8);
-    font-size: 32px;
+    font-size: 2em;
     line-height: 1.27em;
-    letter-spacing: .4px;
+    letter-spacing: 0.025em;
     font-weight: 500;
     margin-right: 20%;
     text-align: start;
@@ -462,32 +568,32 @@ figcaption {
 .kersttekst {
     color: rgb(255, 255, 255, 0.8);
     line-height: 1.6em;
-    letter-spacing: .3px;
-    word-spacing: .4px;
+    letter-spacing: 0.081875em;
+    word-spacing: 0.025em;
     font-weight: 200;
-    font-size: 14px;
-    margin-bottom: 14px;
+    font-size: 0.875em;
+    margin-bottom: 0.875em;
 }
 
 .buttontwee {
     width: 8em;
-    height: 36px;
-    border: 2px solid white;
+    height: 2.25em;
+    border: 0.125em solid white;
     background-color: transparent;
     color: white;
     position: relative;
     text-align: center;
     line-height: 1.8em;
-    font-size: 16px;
-    border-radius: 50px;
+    font-size: 1em;
+    border-radius: 3.125em;
     margin-right: 1em;
 }
 
 .kerstbox {
-    width: 50px;
+    width: 3.125em;
     overflow: hidden;
     margin: 0;
-    border-top: 15px;
+    border-top: 0.9375em;
 }
 
 .kerstbox img {
@@ -502,17 +608,18 @@ figcaption {
 .zeven {
     display: block;
     width: 100%;
-    height: 120px;
+    height: 7.5em;
     background-color: rgb(216, 216, 216);
+    margin: 0;
 }
 
 /*---WAAROM SONOS ----*/
 .waarom {
-    padding: 70px 30px 70px 30px;
+    padding: 1.5em 1em 1.5em 0.8em;
     display: block;
     background-color: #1c5f4a;
     color: rgb(255, 255, 255, 0.8);
-    margin: -5px;
+    margin-bottom: -0.3125em;
     text-align: left;
 }
 
@@ -526,7 +633,7 @@ figcaption {
 
 .rechts {
     display: flex;
-    width: 300px;
+    width: 16em;
     justify-content: flex-end;
     align-content: flex-end;
     top: 100%;
@@ -534,30 +641,31 @@ figcaption {
 }
 
 .links {
-    overflow: hidden;
-    width: 200px;
-    top: 100%;
-    left: 500%;
+    width: 14em;
+    z-index: 1;
+    position: absolute;
+    margin-right: 40%;
 
 }
 
 article {
-    padding: 30px;
+    padding: 1.875em;
     display: block;
     background-color: #1c5f4a;
     color: rgb(255, 255, 255, 0.8);
+    margin-top: -0.5%;
 }
 
 article h3 {
     display: flex;
-    padding-top: 61px;
-    padding-left: 30px;
-    padding-bottom: 76px;
+    padding-top: 3.8125em;
+    padding-left: 3.75em;
+    padding-bottom: 4.75em;
     margin: 0em;
     color: rgb(255, 255, 255, 0.8);
-    font-size: 32px;
+    font-size: 2em;
     line-height: 1.27em;
-    letter-spacing: .4px;
+    letter-spacing: 0.025em;
     font-weight: 500;
     text-align: start;
 }
@@ -569,56 +677,56 @@ article img {
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 500;
     text-decoration: none;
-    border-bottom: 1px solid;
-    letter-spacing: .2px;
-    box-sizing: border-box;
+    border-bottom: 0.0625em solid;
+    letter-spacing: .0125em;
+    display: inline;
 
 }
 
 article div {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 1.875em;
+    padding-bottom: 1.875em;
 }
 
 article p {
-    font-size: 15px;
+    font-size: 0.9375em;
     font-weight: 300;
     line-height: 1.6;
-    letter-spacing: .5px;
-    word-spacing: .6px;
+    letter-spacing: 0.03125em;
+    word-spacing: 0.0375em;
 }
 
 .ptwee {
-    border-bottom: 1px solid;
-    border-top: 1px solid;
+    border-bottom: 0.0625em solid;
+    border-top: 0.0625em solid;
 }
 
 /*--- FOOTER BEGINT VANAF HIER---*/
 
 footer {
-    padding: 31px 40px 60px 40px;
+    padding: 1.9375em 2.5em 1.9375em 2.5em;
     color: black;
     background-color: rgb(216, 216, 216);
+    margin-top: -0.125em;
 
 }
 
 .footera {
     padding: 0;
     list-style: none;
-    margin: 0 30px 30px 0;
+    margin: 0 1.875em 1.875em 0;
 }
 
 .footera li a {
-    font-size: 21px;
+    font-size: 1.3125em;
     line-height: 2em;
-    letter-spacing: .2px;
+    letter-spacing: 0.0125em;
     text-decoration: none;
     cursor: pointer;
     color: rgb(0, 0, 0, 0.8);
-    ;
     font-weight: 400;
 }
 
@@ -630,17 +738,17 @@ footer {
 .footerb {
     padding: 0;
     list-style: none;
-    margin: 0 30px 30px 0;
+    margin: 0 1.875em 1.875em 0;
 }
 
 .footerb li a {
-    font-size: 12px;
-    line-height: 3em;
-    letter-spacing: .2px;
+    font-size: 0.65em;
+    font-weight: 200;
+    line-height: 2.2em;
+    letter-spacing: 0.0125em;
     text-decoration: none;
     cursor: pointer;
     color: rgb(0, 0, 0, 0.8);
-    font-weight: 400;
 }
 
 .footerb li a:hover {
@@ -652,32 +760,32 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding-right: 60px;
-    margin-bottom: 30px;
+    padding-right: 3.75em;
+    margin-bottom: 1.875em;
 
 }
 
 .social img {
-    width: 30px;
+    width: 1.875em;
     list-style: none;
     text-decoration: none;
 
 }
 
 .onderschrift {
-    padding-top: 20px;
-    font-size: 12px;
+    padding-top: 1.25em;
+    font-size: 0.75em;
     font-weight: 400;
     cursor: pointer;
-    padding-right: 60px;
+    padding-right: 3.75em;
 }
 
 .onderschrift a {
     text-decoration: none;
     color: rgb(0, 0, 0, 0.8);
     line-height: 2em;
-    letter-spacing: .3px;
-    word-spacing: .6px;
+    letter-spacing: 0.01875em;
+    word-spacing: 0.0375em;
 }
 
 /*-- HIER EINDIGT DE HOME PAGE ---*/
@@ -706,7 +814,7 @@ footer {
     border-bottom: 3em;
 }
 
-h1 {
+h1:nth-of-type(1) {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -25%);
@@ -777,7 +885,6 @@ select {
     max-height: 240px;
     min-height: 240px;
 }
-
 .container ul li a {
     text-decoration: none;
     display: block;
@@ -789,3 +896,38 @@ select {
     line-height: 1.2em;
     border: 25px solid white;
 }
+
+.container ul li button {
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(0, 0, 0, 0.8);
+    line-height: 1.2em;
+    border: 25px solid white;
+}
+
+.blog {
+
+}
+
+.mandjeplus {
+    color: black;
+    background-color: white;
+    border-radius: 90%;
+    font-size: 0.7em;
+    text-decoration: none;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    margin-left: 25em;
+}
+
+.none {
+    display: none;
+}
+/*---EINDE VAN DE CODE---*/

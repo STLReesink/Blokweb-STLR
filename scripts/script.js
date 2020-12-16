@@ -1,10 +1,28 @@
 // JavaScript Document
-function myFunction() {
-  var x = document.querySelector("#myLinks");
+var deButton = document.querySelector("nav button");
 
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+deButton.addEventListener("click", toggleDropdown);
+
+function toggleDropdown(event) {
+  deNav = event.target.parentNode;
+  deNav.classList.toggle("toonDropdown");
 }
+
+var button = document.querySelector(".blog");
+
+var displayNone = true;
+
+var getal = document.querySelector(".mandjeplus");
+
+var nummer = 1;
+
+button.addEventListener("click", plus)
+
+function plus() {
+if (displayNone == true) {
+    getal.classList.remove("none");
+displayNone = false
+}
+    getal.textContent = nummer++;
+}
+
