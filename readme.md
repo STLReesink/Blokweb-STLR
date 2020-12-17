@@ -47,7 +47,7 @@ SUSAN WIL DIT:
     •
 
 SUZANNE (ik) WIL DIT:
-    •
+    • Hoe kan ik mijn carousel door laten draaien?
     •
     •
     •
