@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
+**Auteur:** -Suzanne Reesink | 500824658-
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -14,7 +14,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 6. https://css-tricks.com/how-to-make-a-css-only-carousel/
 7. https://www.youtube.com/watch?v=YszONjKpgg4
 8. https://www.w3schools.com/csSref/css_entities.asp
-9. martijn van der Lans heeft geholpen met JS
+9. Martijn van der Lans heeft geholpen met JS
+10. https://www.youtube.com/watch?v=YszONjKpgg4
+11. https://codepen.io/shooft/pen/BaKGKwm
+12. https://codepen.io/shooft/pen/xxVmpEP
+13. Martijn van der Lans heeft geholpen met Keyframes
+14. https://www.youtube.com/watch?v=3f31oufqFSM&feature=youtu.be
+
 
 ## Eindgesprek (week 7/8)
 
@@ -24,46 +30,42 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -screenshot(s) van je eindresultaat-
 
-
+## Toegankelijkheids test
+Ik heb de optie gebruikt om alle linkjes voor te lezen. Dit ging eigelijk best goed. Mijn menu dat uitvouwd is wat lastig, want daar begin je onderin. Verder kom je er best okey uit.
+Ik vind de stem van een screenreader wel heel vervelend. Ik ben er niet achter gekomen hoe je terug gaat. Ik heb het nu als vervelend ondervonden dat ik eerst door heel de pagina heen moest om weer terug te gaan naar de link die ik zocht.
+Ook ben ik met het toetsenboord door mijn eigenwebsite heen gelopen en dit lukt ook. Dus daar ben ik blij mee.
 
 ## Voortgang 3 (week 6)
 
+We hebben de voorwaarde doorgenomen, zodat we goed voor ons hadden wat er van ons verwacht wordt.
+
 PALENQUE WIL DIT:
-    •
-    •
-    •
-    •
+    •N.V.T.
 
 SARAH WIL DIT:
-    •
-    •
-    •
-    •
+    • dropdown werkend maken
 
 SUSAN WIL DIT:
-    •
-    •
-    •
-    •
+    • N.V.T.
 
 SUZANNE (ik) WIL DIT:
     • Hoe kan ik mijn carousel door laten draaien?
-    •
-    •
-    •
-    •
+
 
 ## stand van zaken
-het is vandaag 15-12-20
+15-12-20
 Ik heb vanochtend met lars even gekeken naar hoe ik een item in een mandje kan krijgen. Dit is gelukt! Als je op de nieuws pagina nu op het eerste blog item klinkt dat nu een button is. Dan komt er 1 element in het mandje bij. Als je blijft klikken blijf je elementen toevoegen aan je lijstje.
 
-Het is vandaag 14-12-20
+14-12-20
 Ik heb net in een kort gesprekje met janno het lijstje door genomen over welke items ik interactief ga maken voor de surface laag. Dit zijn de streepjes onder de linkjes in de footer, de quiz button die van tekst en achtergrond kleur veranderd als je er overheen hoverd, de dolby atmos 'koop nu' knop draait een rondje en tot slot mijn uitvouwbare menu.
 -dit ging goed & dit was lastig-
 tot nu toe het lastigste element van mijn sonos website de stations carousel. Maar ik heb met Janno besloten het te laten zoals het nu is. Ik heb zo veel tijd gespendeerd aan die carousel dat is niet normaal.
 Wat naar verassing best okey ging was het uitvouwbaar maken van mijn menu. Dit heb ik wel gedaan aan de hand van de codepen opdrachten die we van Sanne krijgen. Maar daar heb ik 1 ochtend aan gezeten en toen was ik er bijzonder genoeg al klaar mee.
 Ik vond het ook lastig om mijn logo in de header juist te positioneren. Ik had hem eerst in een li staat alle iconen in de li dezelfde width gegeven. Maar daardoor bleef mijn icoon heel erg klein. Nu heb ik die uit mijn li gehaald en er een div om heen gezet en daarna appast gestyld van de rest. Ik kreeg het op een andre manier niet klaar gespeeld.
 Ik ben te vreden met hoe mijn website eruit ziet.
+
+06-01-2021
+Vandaag heb ik heel de dag lopen oenen met keyframes. Ik ben er van overtuigd dat ik ze goed gebruik. Alleen lukt het mij niet om ze juist aan te roepen. Dus daarom heb ik Martijn van der lans gevraagd mij morgen even  te helpen.
 
 ## Voortgang 2 (week 5)
 
@@ -95,6 +97,7 @@ SUZANNE (ik) WIL DIT:
 
 
 ## Voortgang 1 (week 3)
+
 
 ### Stand van zaken
 
@@ -177,7 +180,7 @@ Ik mocht van Ires bij de dolby atmos pagina een screenshot maken van hoe de arc 
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -Combinatie van vooral blauw met een beetje rood-
+**Je startniveau:** -Combinatie van vooral blauw-
 
 **Je focus:** -Ik kies voor het werken aan de surface laag van mijn website-
 

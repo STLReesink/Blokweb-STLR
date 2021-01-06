@@ -130,6 +130,7 @@ nav.toonDropdown ul {
 
 
 /*---Menu---*/
+/*--- De rest van de header---*/
 
 .menu {
     display: flex;
@@ -200,6 +201,7 @@ nav.toonDropdown ul {
 }
 
 /* -- MAIN BEGINT VANAF HIER -- */
+/*--- eerste achtergrond foto met knoppen---*/
 .containereen {
     display: block;
     background-size: cover;
@@ -265,7 +267,7 @@ h1:first-of-type {
     padding: 0;
 }
 
-/* -- CAROUSEL -- */
+/* -- CAROUSEL MET BOXEN -- */
 
 .carousel {
     background-color: rgb(216, 216, 216);
@@ -379,6 +381,36 @@ figure img {
 .inbottom_dolbyatomos {
     width: 100%;
     background-color: #d8a158;
+}
+
+/* --- animation button draait een rondje --- */
+
+@keyframes koop-nu-animation {
+    0% {
+        transform: rotate(0);
+        transform: scale(1);
+    }
+    25% {
+        transform: rotate(90deg);
+        transform: scale(2);
+    }
+    50% {
+        transform: rotate(180deg);
+        transform: scale(3);
+    }
+    75% {
+        transform: rotate(270deg);
+        transform: scale(2);
+    }
+    100% {
+        transform: rotate(360deg;);
+        transform: scale(1);
+    }
+}
+
+a :hover .twee {
+    animation-name: koop-nu-animation;
+    animation-duration:1s;
 }
 
 /* -- DE SONOS MOVE WIT --*/
@@ -613,6 +645,28 @@ figure {
     margin: 0;
 }
 
+/*--- animation quizz button ---*/
+
+@keyframes quiz-button-animation {
+    0% {
+        background-color: transparent;
+        color: white;
+    }
+
+    100% {
+        background-color: white;
+        color: black;
+    }
+}
+
+.buttontwee :hover {
+    animation-name: quiz-button-animation;
+    animation-duration: 2s;
+    /*--anitmaite herhaalt zich oneindig---*/
+    animation-iteration-count: infinite;
+}
+
+
 /*---WAAROM SONOS ----*/
 .waarom {
     padding: 1.5em 1em 1.5em 0.8em;
@@ -711,7 +765,6 @@ footer {
     color: black;
     background-color: rgb(216, 216, 216);
     margin-top: -0.125em;
-
 }
 
 .footera {
@@ -730,11 +783,6 @@ footer {
     font-weight: 400;
 }
 
-.footera li a:hover {
-    text-decoration: overline;
-    transition: transform 0.3s ease;
-}
-
 .footerb {
     padding: 0;
     list-style: none;
@@ -751,25 +799,18 @@ footer {
     color: rgb(0, 0, 0, 0.8);
 }
 
-.footerb li a:hover {
-    text-decoration: overline;
-    transition: transform 0.3s ease;
-}
-
 .social {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     padding-right: 3.75em;
     margin-bottom: 1.875em;
-
 }
 
 .social img {
     width: 1.875em;
     list-style: none;
     text-decoration: none;
-
 }
 
 .onderschrift {
@@ -786,6 +827,28 @@ footer {
     line-height: 2em;
     letter-spacing: 0.01875em;
     word-spacing: 0.0375em;
+}
+
+/*-----underline-------*/
+
+@keyframes streepje-anitation {
+    0% {
+        text-decoration: none;
+    }
+
+    100% {
+        text-decoration: underline;
+    }
+}
+
+.footera :hover li a {
+    animation-name: underline-animation;
+    animation-duration: 1s;
+}
+
+.footerb :hover li a{
+    animation-name: underline-animation;
+    animation-duration: 1s;
 }
 
 /*-- HIER EINDIGT DE HOME PAGE ---*/
@@ -885,6 +948,7 @@ select {
     max-height: 240px;
     min-height: 240px;
 }
+
 .container ul li a {
     text-decoration: none;
     display: block;
@@ -909,9 +973,7 @@ select {
     border: 25px solid white;
 }
 
-.blog {
-
-}
+.blog {}
 
 .mandjeplus {
     color: black;
@@ -930,4 +992,5 @@ select {
 .none {
     display: none;
 }
+
 /*---EINDE VAN DE CODE---*/
