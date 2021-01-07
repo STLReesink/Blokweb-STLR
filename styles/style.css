@@ -30,7 +30,6 @@ header a {
 header > a:first-of-type {
     padding: 0.5em;
     display: grid;
-    grid-template-columns: min-content min-content;
     grid-gap: .25em;
     align-items: center;
 }
@@ -141,8 +140,8 @@ nav.toonDropdown ul {
     position: relative;
     list-style: none;
     top: -1.25em;
-    padding: 10px;
-    margin-left: 2em;
+    padding: 0.625em;
+    margin-left: 1em;
 
 }
 
@@ -224,8 +223,8 @@ nav.toonDropdown ul {
 }
 
 h1:first-of-type {
-    position: absolute;
     top: 25%;
+    position: absolute;
     left: 50%;
     transform: translate(-50%, -25%);
     width: 9em;
@@ -236,7 +235,7 @@ h1:first-of-type {
 
 .buttoneen {
     position: absolute;
-    top: 39%;
+    top: 34%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -256,6 +255,7 @@ h1:first-of-type {
     font-size: 1em;
     border-radius: 3.125em;
     margin-right: 1em;
+    text-decoration: none;
 
 }
 
@@ -307,7 +307,7 @@ h1:first-of-type {
     flex-direction: column;
 }
 
-h2 {
+h2:nth-of-type(1) {
     display: flex;
     font-size: 1em;
     line-height: 2em;
@@ -316,7 +316,7 @@ h2 {
 
 .soortbox {
     display: flex;
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 2em;
 }
 
@@ -340,7 +340,7 @@ h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0em 0.937em 0em 0.937empx;
+    margin: 0em 0.937em 0em 0.937em;
 }
 
 h3 {
@@ -348,7 +348,6 @@ h3 {
     letter-spacing: 0.025em;
     word-spacing: 0.1em;
     font-weight: 500;
-    margin-bottom: 0.8125em;
     text-align: center;
     max-width: 100%;
 }
@@ -364,17 +363,17 @@ h3 {
     font-weight: 200;
 }
 
-figure {
+.dolby {
     width: 9em;
     overflow: hidden;
     margin: 0;
     border-top: 0.9375em;
 }
 
-figure img {
+.dolby img {
     display: block;
     width: 100%;
-    margin: -2% 3;
+    margin: 2%;
     padding-top: 2em;
 }
 
@@ -387,30 +386,21 @@ figure img {
 
 @keyframes koop-nu-animation {
     0% {
-        transform: rotate(0);
-        transform: scale(1);
+        transform: scale(1), rotate(0);
     }
-    25% {
-        transform: rotate(90deg);
-        transform: scale(2);
-    }
+
     50% {
-        transform: rotate(180deg);
         transform: scale(3);
     }
-    75% {
-        transform: rotate(270deg);
-        transform: scale(2);
-    }
+
     100% {
-        transform: rotate(360deg;);
-        transform: scale(1);
+        transform: scale(1) rotate(360deg);
     }
 }
 
-a :hover .twee {
+.twee:hover {
     animation-name: koop-nu-animation;
-    animation-duration:1s;
+    animation-duration: 1s;
 }
 
 /* -- DE SONOS MOVE WIT --*/
@@ -457,6 +447,7 @@ a :hover .twee {
     padding: 0.1875em;
     color: rgb(255, 255, 255, 0.8);
     font-size: 0.875em;
+    text-decoration: none;
 }
 
 .wittebox {
@@ -493,7 +484,6 @@ a :hover .twee {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 1.75em;
 }
 
 .ontdek {
@@ -501,7 +491,7 @@ a :hover .twee {
     text-align: center;
     margin: 0;
     padding: 0em 1.875em 1.875em 1.875em;
-    font-weight: 350;
+    font-weight: 300;
     line-height: 1.6em;
     letter-spacing: 0.01875em;
     word-spacing: 0.025em;
@@ -516,57 +506,55 @@ a :hover .twee {
     padding: 0.1875em;
     color: rgb(0, 0, 0, 1);
     font-size: 0.9125em;
-    font-weight: 350;
+    font-weight: 300;
     letter-spacing: 0.01875em;
     word-spacing: 0.025em;
+    text-decoration: none;
 }
 
 .stations {
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
+    width: 100%;
     list-style: none;
-    justify-content: center;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    display: -webkit-inline-box;
     height: 28em;
 }
 
-.stations li {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: block;
-    flex-shrink: 0;
-    object-fit: cover;
-    cursor: pointer;
-
+.stationsOpmaak {
+    display: flex;
+    flex-direction: row;
+    min-width: 1000%;
+    overflow-x: scroll;
 }
 
-.stations li img {
-    width: 100%;
-    height: 100%;
+.stationsOpmaak figure {
+    overflow: hidden;
+    margin: 0;
+    border-top: 0.9375em;
+    justify-content: center;
+    margin: 1em;
+}
+
+.plaat {
+    display: block;
+    object-fit: cover;
+    box-sizing: border-box;
+
 }
 
 figcaption {
     display: flex;
     text-align: left;
     margin-top: 0.9375em;
-    font-weight: 350;
+    font-weight: 300;
     line-height: 1.6;
     letter-spacing: 0.01875em;
     word-spacing: 0.025em;
     font-size: 0.9125em;
-}
-
-figure {
-    width: 9em;
-    overflow: hidden;
-    margin: 0;
-    border-top: 0.9375em;
-    margin: 0 1em;
 }
 
 /*--KERST OP EEN KLEEDJE BEGINT HIER--*/
@@ -619,6 +607,7 @@ figure {
     font-size: 1em;
     border-radius: 3.125em;
     margin-right: 1em;
+    text-decoration: none;
 }
 
 .kerstbox {
@@ -659,11 +648,12 @@ figure {
     }
 }
 
-.buttontwee :hover {
+.buttontwee:hover {
     animation-name: quiz-button-animation;
     animation-duration: 2s;
     /*--anitmaite herhaalt zich oneindig---*/
     animation-iteration-count: infinite;
+
 }
 
 
@@ -831,7 +821,7 @@ footer {
 
 /*-----underline-------*/
 
-@keyframes streepje-anitation {
+@keyframes streepje-animation {
     0% {
         text-decoration: none;
     }
@@ -841,13 +831,13 @@ footer {
     }
 }
 
-.footera :hover li a {
-    animation-name: underline-animation;
+.footera li:hover a {
+    animation-name: streepje-animation;
     animation-duration: 1s;
 }
 
-.footerb :hover li a{
-    animation-name: underline-animation;
+.footerb li:hover a {
+    animation-name: streepje-animation;
     animation-duration: 1s;
 }
 
@@ -877,7 +867,7 @@ footer {
     border-bottom: 3em;
 }
 
-h1:nth-of-type(1) {
+.nieuws {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -25%);
@@ -891,15 +881,15 @@ h1:nth-of-type(1) {
 
 .body {
     background-color: rgb(216, 216, 216);
-    padding: 15px;
+    padding: 0.9375em;
 }
 
 .keuze {
     display: flex;
     justify-content: space-between;
     text-align: right;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-top: 1.875em;
+    padding-bottom: 0.625em;
     line-height: 1em;
     font-weight: 700;
 
@@ -913,7 +903,7 @@ select {
     appearance: none;
     background-color: #fafafa;
     border: none;
-    padding: 12px 18px 12px 18px;
+    padding: 0.75em 1.125em 0.75em 1.125em;
     margin: 0;
     font-size: 1em;
     font-weight: 700;
@@ -924,7 +914,7 @@ select {
 
 .container {
     max-width: 100%;
-    padding-top: 20px;
+    padding-top: 1.25em;
     margin: auto;
 
 }
@@ -945,8 +935,8 @@ select {
     display: block;
     width: 100%;
     height: auto;
-    max-height: 240px;
-    min-height: 240px;
+    max-height: 15em;
+    min-height: 15em;
 }
 
 .container ul li a {
@@ -954,11 +944,11 @@ select {
     display: block;
     background-color: white;
     text-align: left;
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: 700;
     color: rgb(0, 0, 0, 0.8);
     line-height: 1.2em;
-    border: 25px solid white;
+    border: 1.5625em solid white;
 }
 
 .container ul li button {
@@ -966,14 +956,12 @@ select {
     display: block;
     background-color: white;
     text-align: left;
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: 700;
     color: rgb(0, 0, 0, 0.8);
     line-height: 1.2em;
-    border: 25px solid white;
+    border: 1.5625em solid white;
 }
-
-.blog {}
 
 .mandjeplus {
     color: black;
@@ -986,7 +974,7 @@ select {
     text-align: center;
     position: absolute;
     z-index: 100;
-    margin-left: 25em;
+    margin-left: 23em;
 }
 
 .none {

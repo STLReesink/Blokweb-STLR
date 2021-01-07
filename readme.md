@@ -25,10 +25,31 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Eindgesprek (week 7/8)
 
 -dit ging goed & dit was lastig-
+• Goed:
+ Naar mate ik meer tijd stak in mijn website hoe beter het ging. Ik heb om hulp gevraagd wanneer ik ergens niet uitkwam en ben trots dat dankzij de opdrachten die we moesten maken ik 'zelf' een menu heb gemaak (met dank aan Sanne). Heb zelfs een stukje js geschreven. De carousel met de boxen die sonos verkoopt heb ik samen met Noa gemaakt (zij moest er ook 1 maken) en daar ben ik heel erg blij mee. Ik ben blij met hoe ik mijn afbeeldingen uit een kader heb laten zweven en twee afbeeldingen over elkaar heb gekregen. Ik ben heel tevreden met mijn Nieuws pagina. Die vind ik heel strak en netjes.
 
-**Screenshot(s):**
+• lastig:
+ Ik vond het lastig om hulp te vragen, want ik ben de eerste 3/4 weken alleen maar bezig geweest met mijn header en ik raakte daar heel gefrustereerd door. Ik ben niet tevreden met hoe mijn carousel van mijn stations eruit ziet, want ik had graag gewild dat het er zo uit zou zien zoals op de echte sonos site. Maar ik heb aan meerdere mensen hulp gevraagd en die zeiden dat het heel lastig is en dat je dan hele gecompliceerde codes moet schrijven. Als ik dat had gedaan was mijn code nu niet meer vanille, dus moet ik het maar voor lief nemen dat het er nu zo uitziet. Verder heb ik het voor mij zelf lastig gemaakt door soms te lang bij iets stil te staan, waardoor ik soms in tijdnood kwam...
+
+ **Screenshot(s):**
 
 -screenshot(s) van je eindresultaat-
+<img src="images/Eindproduct.index.png" width="375px" alt="Eindproduct">
+<img src="images/Eindproduct.nieuws.png" width="375px" alt="Eindproduct">
+
+## stand van zaken
+07-01-2021
+Dacht ik dat ik het helemaal verkeerd had gedaan bij mijn Keyframes, bleek ik het goed gedaan te hebbem. Maar omdat ik aan het inspecteren was op telefoon en je daar geen hover hebt, deed die het niet. Dus ik kan nu zeggen dat ik weet hoe keyframes werken.
+Verder heb ik mijn codes gecheckt in de validater en alles was goed gekeurd! Top nieuws.
+Dus ik heb nu, volgens afspraak met Janno voor de surface laag gemaakt:
+ • Mijn menu die er inslided vanaf links.
+ • De streepjes onder de footer linkjes.
+ • Item in het mandje kunnen doen (klik op eerste blog post).
+ • Mijn quiz button veranderd van achtergrond en tekst kleur als je er ove hoverd (klikt bij phone).
+ • En mijn dolby atmos 'koop nu' link draait en rondje en wordt groter als je hoverd.
+
+06-01-2021
+Vandaag heb ik heel de dag lopen oenen met keyframes. Ik ben er van overtuigd dat ik ze goed gebruik. Alleen lukt het mij niet om ze juist aan te roepen. Dus daarom heb ik Martijn van der lans gevraagd mij morgen even  te helpen.
 
 ## Toegankelijkheids test
 Ik heb de optie gebruikt om alle linkjes voor te lezen. Dit ging eigelijk best goed. Mijn menu dat uitvouwd is wat lastig, want daar begin je onderin. Verder kom je er best okey uit.
@@ -52,6 +73,7 @@ SUZANNE (ik) WIL DIT:
     • Hoe kan ik mijn carousel door laten draaien?
 
 
+
 ## stand van zaken
 15-12-20
 Ik heb vanochtend met lars even gekeken naar hoe ik een item in een mandje kan krijgen. Dit is gelukt! Als je op de nieuws pagina nu op het eerste blog item klinkt dat nu een button is. Dan komt er 1 element in het mandje bij. Als je blijft klikken blijf je elementen toevoegen aan je lijstje.
@@ -64,8 +86,7 @@ Wat naar verassing best okey ging was het uitvouwbaar maken van mijn menu. Dit h
 Ik vond het ook lastig om mijn logo in de header juist te positioneren. Ik had hem eerst in een li staat alle iconen in de li dezelfde width gegeven. Maar daardoor bleef mijn icoon heel erg klein. Nu heb ik die uit mijn li gehaald en er een div om heen gezet en daarna appast gestyld van de rest. Ik kreeg het op een andre manier niet klaar gespeeld.
 Ik ben te vreden met hoe mijn website eruit ziet.
 
-06-01-2021
-Vandaag heb ik heel de dag lopen oenen met keyframes. Ik ben er van overtuigd dat ik ze goed gebruik. Alleen lukt het mij niet om ze juist aan te roepen. Dus daarom heb ik Martijn van der lans gevraagd mij morgen even  te helpen.
+
 
 ## Voortgang 2 (week 5)
 
