@@ -290,7 +290,7 @@ nav.toonDropdown ul {
 }
 
 h1:first-of-type {
-    top: 25%;
+    top: 22%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -25%);
@@ -298,11 +298,12 @@ h1:first-of-type {
     font-size: 2em;
     color: white;
     text-align: center;
+    margin-bottom: 0.2em;
 }
 
 .buttoneen {
     position: absolute;
-    top: 34%;
+    top: 32%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
