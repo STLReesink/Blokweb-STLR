@@ -306,8 +306,7 @@ h1:first-of-type {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-left: 15%;
-    margin-right: 50%;
+    margin-left: 12%;
 }
 
 .button {
@@ -322,6 +321,7 @@ h1:first-of-type {
     font-size: 1em;
     border-radius: 3.125em;
     margin-right: 1em;
+    margin-top: 0.2em;
     text-decoration: none;
 
 }
