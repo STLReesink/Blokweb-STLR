@@ -820,6 +820,8 @@ footer {
 
 .social img {
     width: 12%;
+    height: auto;
+    height: auto;
     list-style: none;
     text-decoration: none;
 }
