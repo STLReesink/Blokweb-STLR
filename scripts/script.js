@@ -1,5 +1,6 @@
 // JavaScript Document
 var deButton = document.querySelector("nav button");
+var deNav;
 
 deButton.addEventListener("click", toggleDropdown);
 

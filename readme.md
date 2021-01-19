@@ -21,6 +21,18 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 13. Martijn van der Lans heeft geholpen met Keyframes
 14. https://www.youtube.com/watch?v=3f31oufqFSM&feature=youtu.be
 
+## herkansing
+19-01-2021
+Ik ben vandaag aan de slag gegaan met de feedback die ik had ontvangen.
+• horizontale scroll verwijderen
+• social media iconen op mobiel aanpassen
+• mandje animatie op mobiel werkend maken
+• button index op mobiel aanpassen (zie video)
+• keyframes bovenaan de pagina plaatsen
+• w3c validator voor regel 41 nieuws1 <p> omzetten in <div>
+• en tot slot comments toevoegen aan de header, main en footer ( en bij extra dingen)
+
+tot nu toe heb ik de keyframes af, de w3c validater is goed en ik heb de comments toegevoegd. Ik probeer de horizontale scroll eruit te krijgen maar dat lukt nog niet helemaal.
 
 ## Eindgesprek (week 7/8)
 

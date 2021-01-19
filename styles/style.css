@@ -8,6 +8,73 @@
     max-width: 100%;
 }
 
+/* -- Keyframes boven aan voor best practice --  */
+/* --- animation button draait een rondje --- */
+
+@keyframes koop-nu-animation {
+    0% {
+        transform: scale(1), rotate(0);
+    }
+
+    50% {
+        transform: scale(3);
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.twee:hover {
+    animation-name: koop-nu-animation;
+    animation-duration: 1s;
+}
+
+/*--- animation quizz button ---*/
+
+@keyframes quiz-button-animation {
+    0% {
+        background-color: transparent;
+        color: white;
+    }
+
+    100% {
+        background-color: white;
+        color: black;
+    }
+}
+
+.buttontwee:hover {
+    animation-name: quiz-button-animation;
+    animation-duration: 2s;
+    /*--anitmaite herhaalt zich oneindig---*/
+    animation-iteration-count: infinite;
+
+}
+
+/*-----underline-------*/
+
+@keyframes streepje-animation {
+    0% {
+        text-decoration: none;
+    }
+
+    100% {
+        text-decoration: underline;
+    }
+}
+
+.footera li:hover a {
+    animation-name: streepje-animation;
+    animation-duration: 1s;
+}
+
+.footerb li:hover a {
+    animation-name: streepje-animation;
+    animation-duration: 1s;
+}
+
+
 /* -- HEADER --  */
 /* -- UITVOUW MENU--  */
 header {
@@ -382,26 +449,6 @@ h3 {
     background-color: #d8a158;
 }
 
-/* --- animation button draait een rondje --- */
-
-@keyframes koop-nu-animation {
-    0% {
-        transform: scale(1), rotate(0);
-    }
-
-    50% {
-        transform: scale(3);
-    }
-
-    100% {
-        transform: scale(1) rotate(360deg);
-    }
-}
-
-.twee:hover {
-    animation-name: koop-nu-animation;
-    animation-duration: 1s;
-}
 
 /* -- DE SONOS MOVE WIT --*/
 
@@ -634,27 +681,6 @@ figcaption {
     margin: 0;
 }
 
-/*--- animation quizz button ---*/
-
-@keyframes quiz-button-animation {
-    0% {
-        background-color: transparent;
-        color: white;
-    }
-
-    100% {
-        background-color: white;
-        color: black;
-    }
-}
-
-.buttontwee:hover {
-    animation-name: quiz-button-animation;
-    animation-duration: 2s;
-    /*--anitmaite herhaalt zich oneindig---*/
-    animation-iteration-count: infinite;
-
-}
 
 
 /*---WAAROM SONOS ----*/
@@ -668,28 +694,23 @@ figcaption {
 }
 
 .waaromfoto {
-    position: relative;
     display: flex;
-    flex-direction: row-reverse;
-    margin: 0;
     background-color: #1c5f4a;
+flex-direction: row-reverse;
 }
 
 .rechts {
     display: flex;
     width: 16em;
-    justify-content: flex-end;
-    align-content: flex-end;
-    top: 100%;
-    left: 500%;
+    margin-left: 7.2em;
 }
 
 .links {
-    width: 14em;
+    width: 13em;
     z-index: 1;
     position: absolute;
-    margin-right: 40%;
-
+    margin-left: 2%;
+    margin-top: 1em;
 }
 
 article {
@@ -798,7 +819,7 @@ footer {
 }
 
 .social img {
-    width: 1.875em;
+    width: 12%;
     list-style: none;
     text-decoration: none;
 }
@@ -819,27 +840,6 @@ footer {
     word-spacing: 0.0375em;
 }
 
-/*-----underline-------*/
-
-@keyframes streepje-animation {
-    0% {
-        text-decoration: none;
-    }
-
-    100% {
-        text-decoration: underline;
-    }
-}
-
-.footera li:hover a {
-    animation-name: streepje-animation;
-    animation-duration: 1s;
-}
-
-.footerb li:hover a {
-    animation-name: streepje-animation;
-    animation-duration: 1s;
-}
 
 /*-- HIER EINDIGT DE HOME PAGE ---*/
 
