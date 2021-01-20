@@ -704,6 +704,7 @@ figcaption {
     display: flex;
     background-color: #1c5f4a;
     flex-direction: row-reverse;
+    position: relative;
 }
 
 .rechts {
@@ -716,8 +717,8 @@ figcaption {
     width: 13em;
     z-index: 1;
     position: absolute;
-    margin-left: 2%;
     margin-top: 1em;
+    left: 2em;
 }
 
 article {
