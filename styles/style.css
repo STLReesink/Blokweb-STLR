@@ -289,7 +289,7 @@ nav.toonDropdown ul {
     border-bottom: 3em;
 }
 
-h1:first-of-type {
+.luisteren {
     width: 90%;
     font-size: 2em;
     color: white;
@@ -311,7 +311,6 @@ h1:first-of-type {
     border: 0.125em solid white;
     background-color: transparent;
     color: white;
-    position: relative;
     text-align: center;
     line-height: 1.8em;
     font-size: 1em;
@@ -855,31 +854,33 @@ footer {
 
 /*--- HIER BEGINT DE HEADER FOTO---*/
 .nieuwskamer {
+    position: relative;
     display: block;
     background-size: cover;
     background-repeat: repeat-x;
     background-position: center;
     top: 3em;
+    margin: 0 auto;
 }
 
 .kamer {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
-    position: relative;
     background-size: cover;
     background-repeat: repeat-x;
     background-position: center;
     top: auto;
-    border-bottom: 3em;
+    margin: 0 auto;
+    padding-bottom: 2.8em;
 }
 
 .nieuws {
-    top: 30%;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -25%);
-    width: 9em;
+    transform: translate(-50%, -50%);
+    width: 90%;
     font-size: 2em;
     color: white;
     text-align: center;
