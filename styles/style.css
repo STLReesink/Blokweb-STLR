@@ -335,6 +335,11 @@ h1:first-of-type {
     padding: 0;
 }
 
+.stijlenbutton {
+    display: flex;
+    flex-direction: row;
+}
+
 /* -- CAROUSEL MET BOXEN -- */
 
 .carousel {
@@ -697,7 +702,7 @@ figcaption {
 .waaromfoto {
     display: flex;
     background-color: #1c5f4a;
-flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .rechts {
