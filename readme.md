@@ -22,6 +22,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 14. https://www.youtube.com/watch?v=3f31oufqFSM&feature=youtu.be
 
 ## herkansing
+20-01-2021
+Vandaag zat ik om 9 uur aan de code, om zelf nog even het een en ander te proberen. Maar om 10 uur kwam martijn mij helpen. Het is nu 11 uur en alle problemen zijn verholpen. Super chill!
+Ik ga nu mijn herkansing weer inleveren op DLO.
+
 19-01-2021
 Ik ben vandaag aan de slag gegaan met de feedback die ik had ontvangen.
 • horizontale scroll verwijderen
