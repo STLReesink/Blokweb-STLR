@@ -269,6 +269,7 @@ nav.toonDropdown ul {
 /* -- MAIN BEGINT VANAF HIER -- */
 /*--- eerste achtergrond foto met knoppen---*/
 .containereen {
+    position: relative;
     display: block;
     background-size: cover;
     background-repeat: repeat-x;
@@ -281,7 +282,6 @@ nav.toonDropdown ul {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    position: relative;
     background-size: cover;
     background-repeat: repeat-x;
     background-position: center;
@@ -290,24 +290,19 @@ nav.toonDropdown ul {
 }
 
 h1:first-of-type {
-    top: 22%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -25%);
-    width: 9em;
+    width: 90%;
     font-size: 2em;
     color: white;
     text-align: center;
     margin-bottom: 0.2em;
+    margin: 0 auto;
 }
 
 .buttoneen {
-    position: absolute;
-    top: 32%;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    margin-left: 12%;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .button {
@@ -328,7 +323,6 @@ h1:first-of-type {
 }
 
 .een {
-    width: 12em;
     color: white;
     text-decoration: underline;
     margin: 0;
@@ -337,7 +331,14 @@ h1:first-of-type {
 
 .stijlenbutton {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+
 }
 
 /* -- CAROUSEL MET BOXEN -- */
